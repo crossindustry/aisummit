@@ -828,6 +828,40 @@
       letter-spacing: 0.09em;
       font-weight: 600;
     }
+    .speaker-bio {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .speaker-card--confirmed {
+      border-color: rgba(201,92,255,0.3);
+      position: relative;
+    }
+    .speaker-confirmed-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      background: linear-gradient(90deg, rgba(161,0,255,0.18), rgba(201,92,255,0.12));
+      border-bottom: 1px solid rgba(201,92,255,0.25);
+      color: var(--a2);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .speaker-confirmed-banner::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--a2);
+      box-shadow: 0 0 8px rgba(201,92,255,0.9);
+      flex-shrink: 0;
+    }
 
     /* ─── MANIFESTO ─── */
     .manifesto { padding: 120px 0; }
@@ -1217,10 +1251,10 @@
       </a>
       <nav aria-label="Primary navigation">
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Über uns</a></li>
           <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#venue">Venue</a></li>
+          <li><a href="#speakers">Featured Voices</a></li>
+          <li><a href="#venue">Veranstaltungsort</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -1236,7 +1270,7 @@
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Featured Voices</a>
     <a href="#purpose">Summit Purpose</a>
-    <a href="#venue">Venue</a>
+    <a href="#venue">Veranstaltungsort</a>
     <a href="#faq">FAQ</a>
   </div>
 
@@ -1491,24 +1525,28 @@
           Speaker line-up to be announced.
         </div>
         <div class="speakers-layout reveal">
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
+              
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Prof. Dr. Yasmin Weiß</h3>
+              <div class="speaker-role">AI &amp; Future of Work Expert</div>
+              <p class="speaker-bio">Professor researching how AI transforms the workplace, multiple supervisory board member including at United Internet AG and Accenture DACH Advisory Board, keynote speaker and author. She explores how AI changes requirements for employees and leaders, and how to build effective human-machine teams and augmented intelligence.</p>
             </div>
           </article>
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
+              
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Markus Kronen</h3>
+              <div class="speaker-role">Head of Generative AI, BMW Group</div>
+              <p class="speaker-bio">Since June 2024, Head of the Generative AI division in Procurement and Supplier Network at BMW Group. He led the development of AIconic, a multi-agent system serving as the central AI access point for procurement processes worldwide — a flagship project of BMW's digital transformation.</p>
             </div>
           </article>
           <article class="speaker-card">
@@ -1561,7 +1599,7 @@
         <div class="manifesto-panel reveal">
           <div class="pill">Summit Purpose</div>
           <div class="manifesto-headline">Turn <span>AI ambition</span> into real enterprise impact.</div>
-          <p class="manifesto-support">Enable leaders to guide their organizations through the critical shift from fragmented pilots to orchestrated, value-driven AI at scale. Cut through hype and experimentation fatigue by showing what truly works, where value actually emerges and how human ingenuity and AI can be combined with intent, discipline and trust.</p>
+          <p class="manifesto-support">Führungskräfte befähigen, ihre Organisationen durch den kritischen Wandel von fragmentierten Pilotprojekten zu orchestrierter, wertgetriebener KI in großem Maßstab zu führen. Hype und Move beyond experimentation fatigue, indem gezeigt wird, was wirklich funktioniert, wo Wert tatsächlich entsteht und wie menschlicher Einfallsreichtum und KI mit Absicht, Disziplin und Vertrauen kombiniert werden können.</p>
         </div>
       </div>
     </section>
@@ -1570,7 +1608,7 @@
     <section class="section" id="venue">
       <div class="container">
         <div class="section-header reveal">
-          <div class="pill">Venue</div>
+          <div class="pill">Veranstaltungsort</div>
           <h2>A premium in-person setting for focused dialogue, executive exchange and curated encounters.</h2>
           <p>Hosted in Munich at the Accenture office, the summit is designed as an immersive on-site experience that brings substance, atmosphere and conversation into one coherent setting.</p>
         </div>
@@ -1628,11 +1666,11 @@
           </div>
           <div class="faq-item">
             <button class="faq-q" type="button" aria-expanded="false">
-              <span>Are external speakers included?</span>
+              <span>Sind externe Featured Voiceen dabei?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body"><div>
-              <p>Yes. The summit includes external keynote speakers, nominated guests and panel voices alongside internal experts. Some speaker slots are still marked as TBD and can be finalized later.</p>
+              <p>Ja. Der Gipfel umfasst externe Keynote-Sprecher, nominierte Gäste und Panel-Stimmen neben internen Experten. Einige Featured Voiceenplätze sind noch als „wird noch bekanntgegeben" markiert und können später finalisiert werden.</p>
             </div></div>
           </div>
           <div class="faq-item">
@@ -1641,7 +1679,7 @@
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body"><div>
-              <p>After the main sessions conclude, the summit continues with networking and a loft dinner, creating space for more personal exchange, follow-up dialogue and relationship building.</p>
+              <p>Nach Closing der Hauptsitzungen geht der Gipfel mit Networking und einem Abendessen weiter, wodurch Raum für persönlicheren Austausch, Folgegespräche und Beziehungsaufbau entsteht.</p>
             </div></div>
           </div>
         </div>
@@ -1663,12 +1701,12 @@
         <div class="footer-col">
           <h4>Event Information</h4>
           <a href="#agenda">Agenda</a>
-          <a href="#speakers">Speakers</a>
-          <a href="#venue">Venue</a>
+          <a href="#speakers">Featured Voices</a>
+          <a href="#venue">Veranstaltungsort</a>
           <a href="#faq">FAQ</a>
         </div>
         <div class="footer-col">
-          <h4>Register</h4>
+          <h4>Registration</h4>
           <a href="https://insights.accenture.com/jfe/form/SV_6LHj0R9N4vGIGFw" target="_blank" rel="noopener">Secure Your Seat</a>
         </div>
       </div>
