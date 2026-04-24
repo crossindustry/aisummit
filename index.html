@@ -834,6 +834,30 @@
       color: var(--muted);
       line-height: 1.65;
     }
+    .speaker-format-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 0.75rem;
+      padding: 0.28rem 0.65rem;
+      border-radius: 999px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid rgba(201,92,255,0.25);
+      background: rgba(161,0,255,0.08);
+      color: var(--a2);
+    }
+    .speaker-format-tag::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--a2);
+      flex-shrink: 0;
+    }
     .speaker-card--confirmed {
       border-color: rgba(201,92,255,0.3);
       position: relative;
@@ -1534,6 +1558,7 @@
             <div class="speaker-info">
               <h3>Prof. Dr. Yasmin Weiß</h3>
               <div class="speaker-role">AI &amp; Future of Work Expert</div>
+              <span class="speaker-format-tag">Keynote Speaker</span>
               <p class="speaker-bio">Professor researching how AI transforms the workplace, multiple supervisory board member including at United Internet AG and Accenture DACH Advisory Board, keynote speaker and author. She explores how AI changes requirements for employees and leaders, and how to build effective human-machine teams and augmented intelligence.</p>
             </div>
           </article>
@@ -1546,47 +1571,56 @@
             <div class="speaker-info">
               <h3>Markus Kronen</h3>
               <div class="speaker-role">Head of GenAI Purchasing &amp; Supplier Network, BMW Group</div>
+              <span class="speaker-format-tag">Keynote Speaker</span>
               <p class="speaker-bio">Since June 2024, Head of the Generative AI division in Procurement and Supplier Network at BMW Group. He led the development of AIconic, a multi-agent system serving as the central AI access point for procurement processes worldwide — a flagship project of BMW's digital transformation.</p>
             </div>
           </article>
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Claudia Pohlink</h3>
+              <div class="speaker-role">Chief Data Officer, FIEGE Logistik</div>
+              <span class="speaker-format-tag">Podium Discussion</span>
+              <p class="speaker-bio">CDO at FIEGE Logistik with over 20 years in Data Science, AI and Innovation Management. Former Head of Data Intelligence at Deutsche Bahn and ML team lead at Deutsche Telekom's T-Labs. Angel investor, board member at HTW Berlin, and former chair of Bitkom's AI working group. Named "Global Women Leader in AI" by IBM and "40 over 40 – Germany's Most Inspiring Women."</p>
             </div>
           </article>
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Romina Medici</h3>
+              <div class="speaker-role">Global Data &amp; AI Executive, E.ON Digital Technology</div>
+              <span class="speaker-format-tag">Podium Discussion</span>
+              <p class="speaker-bio">Global Data &amp; AI Executive at E.ON Digital Technology, shaping and scaling future-proof business models by uniting strategy, technology, data and governance into one end-to-end ecosystem. Entrepreneurial leader, keynote speaker and mentor with a track record of designing and leading global data transformations across complex international organizations — always with a clear focus on measurable business impact, operational excellence and cultural adoption.</p>
             </div>
           </article>
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Thomas Oehl</h3>
+              <div class="speaker-role">Founding Partner, Vsquared Ventures</div>
+              <span class="speaker-format-tag">Fireside Chat</span>
+              <p class="speaker-bio">Founding Partner of Vsquared Ventures, investing in Deep Tech companies for over 8 years. Built the predecessor fund Vito Ventures as Managing Partner. Former early Uber employee in Germany and serial entrepreneur with a successful exit in 2013. Beer brewer by training, techie by heart.</p>
             </div>
           </article>
-          <article class="speaker-card">
+          <article class="speaker-card speaker-card--confirmed">
+            <div class="speaker-confirmed-banner">Already Confirmed</div>
             <div class="speaker-visual">
               <div class="speaker-silhouette" aria-hidden="true"></div>
-              <div class="speaker-badge">Placeholder</div>
             </div>
             <div class="speaker-info">
-              <h3>Featured Voice</h3>
-              <div class="speaker-role">To Be Announced</div>
+              <h3>Stefan Mesken</h3>
+              <div class="speaker-role">Chief Scientist, DeepL</div>
+              <span class="speaker-format-tag">Fireside Chat</span>
+              <p class="speaker-bio">Chief Scientist at DeepL, leading the research behind DeepL's large-scale language models and multilingual AI systems. Started as Research Scientist in 2020, became VP Research in 2023 and Chief Scientist in 2025. Formerly a data scientist and mathematical logic researcher at the University of Münster. Pioneer behind DeepL Agent, the company's autonomous enterprise AI system.</p>
             </div>
           </article>
         </div>
